@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		705132E22ED37BAC003CDCA3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 705132E12ED37BAC003CDCA3 /* SDWebImageSwiftUI */; };
+		705132F02ED6160A003CDCA3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 705132EF2ED6160A003CDCA3 /* Kingfisher */; };
+		705132F62ED75282003CDCA3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 705132F52ED75282003CDCA3 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		705132D22ED378FA003CDCA3 /* SPMsAndSDKs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMsAndSDKs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705132F62ED75282003CDCA3 /* KeychainSwift in Frameworks */,
+				705132F02ED6160A003CDCA3 /* Kingfisher in Frameworks */,
+				705132E22ED37BAC003CDCA3 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = SPMsAndSDKs;
 			packageProductDependencies = (
+				705132E12ED37BAC003CDCA3 /* SDWebImageSwiftUI */,
+				705132EF2ED6160A003CDCA3 /* Kingfisher */,
+				705132F52ED75282003CDCA3 /* KeychainSwift */,
 			);
 			productName = SPMsAndSDKs;
 			productReference = 705132D22ED378FA003CDCA3 /* SPMsAndSDKs.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = 705132C92ED378FA003CDCA3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				705132E02ED37BAC003CDCA3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				705132EE2ED6160A003CDCA3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				705132F42ED75282003CDCA3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 705132D32ED378FA003CDCA3 /* Products */;
 			projectDirPath = "";
@@ -332,6 +349,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		705132E02ED37BAC003CDCA3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+		705132EE2ED6160A003CDCA3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+		705132F42ED75282003CDCA3 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		705132E12ED37BAC003CDCA3 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705132E02ED37BAC003CDCA3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		705132EF2ED6160A003CDCA3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705132EE2ED6160A003CDCA3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		705132F52ED75282003CDCA3 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 705132F42ED75282003CDCA3 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 705132CA2ED378FA003CDCA3 /* Project object */;
 }
